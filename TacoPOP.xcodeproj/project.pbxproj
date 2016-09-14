@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		07CDFBF31D89897A00B6AF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDFBF21D89897A00B6AF44 /* AppDelegate.swift */; };
-		07CDFBF51D89897A00B6AF44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDFBF41D89897A00B6AF44 /* ViewController.swift */; };
 		07CDFBF81D89897A00B6AF44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CDFBF61D89897A00B6AF44 /* Main.storyboard */; };
 		07CDFBFA1D89897A00B6AF44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CDFBF91D89897A00B6AF44 /* Assets.xcassets */; };
 		07CDFBFD1D89897A00B6AF44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CDFBFB1D89897A00B6AF44 /* LaunchScreen.storyboard */; };
 		07CDFC081D89897A00B6AF44 /* TacoPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDFC071D89897A00B6AF44 /* TacoPOPTests.swift */; };
+		07CDFC191D898C1500B6AF44 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDFC181D898C1500B6AF44 /* MainVC.swift */; };
+		07CDFC1B1D898CEF00B6AF44 /* TacoPOPData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 07CDFC1A1D898CEF00B6AF44 /* TacoPOPData.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		07CDFBEF1D89897A00B6AF44 /* TacoPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CDFBF21D89897A00B6AF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07CDFBF41D89897A00B6AF44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07CDFBF71D89897A00B6AF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07CDFBF91D89897A00B6AF44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CDFBFC1D89897A00B6AF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		07CDFC031D89897A00B6AF44 /* TacoPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CDFC071D89897A00B6AF44 /* TacoPOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoPOPTests.swift; sourceTree = "<group>"; };
 		07CDFC091D89897A00B6AF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07CDFC181D898C1500B6AF44 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		07CDFC1A1D898CEF00B6AF44 /* TacoPOPData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TacoPOPData.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,12 @@
 		07CDFBF11D89897A00B6AF44 /* TacoPOP */ = {
 			isa = PBXGroup;
 			children = (
-				07CDFBF21D89897A00B6AF44 /* AppDelegate.swift */,
-				07CDFBF41D89897A00B6AF44 /* ViewController.swift */,
-				07CDFBF61D89897A00B6AF44 /* Main.storyboard */,
-				07CDFBF91D89897A00B6AF44 /* Assets.xcassets */,
-				07CDFBFB1D89897A00B6AF44 /* LaunchScreen.storyboard */,
-				07CDFBFE1D89897A00B6AF44 /* Info.plist */,
+				07CDFC151D898B8C00B6AF44 /* Extensions */,
+				07CDFC161D898B9300B6AF44 /* Protocols */,
+				07CDFC131D898A8300B6AF44 /* Model */,
+				07CDFC121D898A7E00B6AF44 /* View */,
+				07CDFC141D898B6600B6AF44 /* Controller */,
+				07CDFC171D898B9B00B6AF44 /* Resources */,
 			);
 			path = TacoPOP;
 			sourceTree = "<group>";
@@ -94,6 +96,55 @@
 				07CDFC091D89897A00B6AF44 /* Info.plist */,
 			);
 			path = TacoPOPTests;
+			sourceTree = "<group>";
+		};
+		07CDFC121D898A7E00B6AF44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07CDFBFB1D89897A00B6AF44 /* LaunchScreen.storyboard */,
+				07CDFBF61D89897A00B6AF44 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07CDFC131D898A8300B6AF44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		07CDFC141D898B6600B6AF44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07CDFBF21D89897A00B6AF44 /* AppDelegate.swift */,
+				07CDFC181D898C1500B6AF44 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		07CDFC151D898B8C00B6AF44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		07CDFC161D898B9300B6AF44 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		07CDFC171D898B9B00B6AF44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07CDFC1A1D898CEF00B6AF44 /* TacoPOPData.csv */,
+				07CDFBF91D89897A00B6AF44 /* Assets.xcassets */,
+				07CDFBFE1D89897A00B6AF44 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07CDFBFD1D89897A00B6AF44 /* LaunchScreen.storyboard in Resources */,
+				07CDFC1B1D898CEF00B6AF44 /* TacoPOPData.csv in Resources */,
 				07CDFBFA1D89897A00B6AF44 /* Assets.xcassets in Resources */,
 				07CDFBF81D89897A00B6AF44 /* Main.storyboard in Resources */,
 			);
@@ -199,8 +251,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CDFBF51D89897A00B6AF44 /* ViewController.swift in Sources */,
 				07CDFBF31D89897A00B6AF44 /* AppDelegate.swift in Sources */,
+				07CDFC191D898C1500B6AF44 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
