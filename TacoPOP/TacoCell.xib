@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPOP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Beef" translatesAutoresizingMaskIntoConstraints="NO" id="99d-77-MLb"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bistek Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZI-wD-dZi">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="99d-77-MLb" secondAttribute="trailing" id="P4P-aU-HTy"/>
+                <constraint firstItem="2ZI-wD-dZi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cTs-0X-dfP"/>
+                <constraint firstItem="2ZI-wD-dZi" firstAttribute="top" secondItem="99d-77-MLb" secondAttribute="bottom" constant="5" id="epu-ra-Mq7"/>
+                <constraint firstItem="99d-77-MLb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jMt-op-tmh"/>
+                <constraint firstItem="99d-77-MLb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kPM-Da-5i5"/>
+                <constraint firstAttribute="trailing" secondItem="2ZI-wD-dZi" secondAttribute="trailing" id="puN-oZ-bI6"/>
+                <constraint firstAttribute="bottom" secondItem="2ZI-wD-dZi" secondAttribute="bottom" constant="5" id="sag-nN-1kP"/>
+                <constraint firstItem="99d-77-MLb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wNR-qh-HJk"/>
+            </constraints>
+            <size key="customSize" width="175" height="145"/>
+            <point key="canvasLocation" x="96.5" y="101.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Beef" width="960" height="640"/>
+    </resources>
+</document>
